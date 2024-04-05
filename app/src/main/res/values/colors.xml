@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="primary_background">#D8D8D8</color>
+    <color name="secondary_background">#7E7E7E</color>
+
+    <color name="primary_text">#535353</color>
+    <color name="primary_icons">#FD5252</color>
+
+    <color name="primary_ripple">#99808080</color>
+
+</resources>
