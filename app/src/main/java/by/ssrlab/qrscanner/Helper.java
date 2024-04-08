@@ -4,7 +4,6 @@ import android.content.pm.PackageManager;
 import android.media.Image;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.OptIn;
 import androidx.camera.core.CameraSelector;
@@ -15,19 +14,16 @@ import androidx.camera.core.Preview;
 import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.mlkit.vision.barcode.BarcodeScanner;
 import com.google.mlkit.vision.barcode.BarcodeScanning;
 import com.google.mlkit.vision.barcode.common.Barcode;
 import com.google.mlkit.vision.common.InputImage;
-
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-
 import by.ssrlab.qrscanner.databinding.ActivityMainBinding;
+import kotlin.Suppress;
 
 public class Helper {
 
