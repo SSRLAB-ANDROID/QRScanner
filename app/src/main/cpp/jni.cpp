@@ -12,7 +12,7 @@ extern "C" {
 
     jclass get_helper(JNIEnv *env) {
         //Get helper class
-        jclass helperClass = env->FindClass("by/ssrlab/qrscanner/Helper");
+        jclass helperClass = env->FindClass("by/ssrlab/qr_scanner/Helper");
         if (!helperClass) {
             log_error("Helper class not found");
             return nullptr;

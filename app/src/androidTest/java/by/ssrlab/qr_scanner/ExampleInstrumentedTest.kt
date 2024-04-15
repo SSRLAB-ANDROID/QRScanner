@@ -1,4 +1,4 @@
-package by.ssrlab.qrscanner
+package by.ssrlab.qr_scanner
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

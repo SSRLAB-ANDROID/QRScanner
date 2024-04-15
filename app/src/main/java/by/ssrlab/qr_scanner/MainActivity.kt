@@ -1,4 +1,4 @@
-package by.ssrlab.qrscanner
+package by.ssrlab.qr_scanner
 
 import android.Manifest
 import android.app.Dialog
@@ -17,8 +17,8 @@ import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import by.ssrlab.qrscanner.databinding.ActivityMainBinding
-import by.ssrlab.qrscanner.databinding.DialogOpenBinding
+import by.ssrlab.qr_scanner.databinding.ActivityMainBinding
+import by.ssrlab.qr_scanner.databinding.DialogOpenBinding
 
 class MainActivity : AppCompatActivity() {
 

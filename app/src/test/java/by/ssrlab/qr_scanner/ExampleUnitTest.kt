@@ -1,4 +1,4 @@
-package by.ssrlab.qrscanner
+package by.ssrlab.qr_scanner
 
 import org.junit.Test
 

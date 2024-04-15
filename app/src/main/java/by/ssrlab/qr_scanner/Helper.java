@@ -1,4 +1,4 @@
-package by.ssrlab.qrscanner;
+package by.ssrlab.qr_scanner;
 
 import android.content.pm.PackageManager;
 import android.media.Image;
@@ -22,8 +22,7 @@ import com.google.mlkit.vision.barcode.common.Barcode;
 import com.google.mlkit.vision.common.InputImage;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-import by.ssrlab.qrscanner.databinding.ActivityMainBinding;
-import kotlin.Suppress;
+import by.ssrlab.qr_scanner.databinding.ActivityMainBinding;
 
 public class Helper {
 
