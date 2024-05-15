@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun checkPermissions() {
         if (ContextCompat.checkSelfPermission(this@MainActivity, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED)
-            initJNI()
-        else requestPermissionJNI()
+            Helper().init(this@MainActivity)
+        else Helper().requestPermission(this@MainActivity)
     }
 
     private fun initTextAction() {
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
         if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)
-            initJNI()
+            Helper().init(this@MainActivity)
     }
 
     private fun initDialog(text: String) {
@@ -115,11 +115,7 @@ class MainActivity : AppCompatActivity() {
 
     fun getBinding() = binding
 
-    private external fun requestPermissionJNI()
-    private external fun initJNI()
-
     companion object {
-        // Used to load the 'qrscanner' library on application startup.
         init {
             System.loadLibrary("qrscanner")
         }

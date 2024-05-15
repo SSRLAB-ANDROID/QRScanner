@@ -28,12 +28,12 @@ public class Helper {
 
     private ListenableFuture<ProcessCameraProvider> cplf; //camera provider listenable feature
 
-    private void requestPermission(MainActivity activity) {
+    void requestPermission(MainActivity activity) {
         String[] permissions = { android.Manifest.permission.CAMERA };
         ActivityCompat.requestPermissions(activity, permissions, PackageManager.PERMISSION_GRANTED);
     }
 
-    private void init(MainActivity activity) {
+    void init(MainActivity activity) {
         cplf = ProcessCameraProvider.getInstance(activity);
 
         cplf.addListener(() -> {
