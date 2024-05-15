@@ -40,7 +40,7 @@ extern "C" {
     }
 
     JNIEXPORT void JNICALL
-    Java_by_ssrlab_qrscanner_MainActivity_requestPermissionJNI(JNIEnv *env, jobject thiz) {
+    Java_by_ssrlab_qr_1scanner_MainActivity_requestPermissionJNI(JNIEnv *env, jobject thiz) {
 
         //Get helper method request permission
         jmethodID requestPermissionMethod = env->GetMethodID(get_helper(env), "requestPermission", "(Lby/ssrlab/qrscanner/MainActivity;)V");
@@ -53,7 +53,7 @@ extern "C" {
     }
 
     JNIEXPORT void JNICALL
-    Java_by_ssrlab_qrscanner_MainActivity_initJNI(JNIEnv *env, jobject thiz) {
+    Java_by_ssrlab_qr_1scanner_MainActivity_initJNI(JNIEnv *env, jobject thiz) {
         jmethodID init = env->GetMethodID(get_helper(env), "init", "(Lby/ssrlab/qrscanner/MainActivity;)V");
         if (!init) {
             log_error("Cannot find init method");
